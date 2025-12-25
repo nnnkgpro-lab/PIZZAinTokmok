@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Пиццерия — Доставка пиццы</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg, #8b4513, #c76b2a);
+      color: #fff;
+      padding: 30px 15px;
+      text-align: center;
+    }
+    header h1 { margin: 0; font-size: 36px; }
+    header p { margin: 10px 0 0; font-size: 18px; }
+
+    .container {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 0 15px;
+    }
+
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+    .card:hover { transform: translateY(-5px); }
+
+    .card img {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 16px;
+    }
+    .card-body h3 {
+      margin: 0 0 8px;
+      font-size: 22px;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #8b4513;
+      font-size: 18px;
+      margin: 10px 0;
+    }
+
+    .order-btn {
+      display: inline-block;
+      background: #25D366;
+      color: #fff;
+      padding: 10px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .order-btn:hover { background: #1ebe5d; }
+
+    .promo {
+      background: #fff3cd;
+      border-left: 6px solid #ff9800;
+      padding: 20px;
+      margin: 40px 0;
+      border-radius: 10px;
+      font-size: 22px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    footer {
+      background: #2b2b2b;
+      color: #fff;
+      padding: 25px 15px;
+      text-align: center;
+    }
+
+    .phones {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .phones a {
+      color: #ffd700;
+      text-decoration: none;
+      margin: 0 6px;
+      font-weight: bold;
+    }
+
+    .delivery {
+      font-size: 20px;
+      color: #4caf50;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Пиццерия</h1>
+  <p>Горячая пицца • Быстро • Вкусно</p>
+</header>
+
+<div class="container">
+  <div class="menu">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1601924582975-7aa3c9f4d6b6" alt="Пепперони">
+      <div class="card-body">
+        <h3>Пепперони</h3>
+        <p>Пепперони, моцарелла, соус из томатов и орегано</p>
+        <div class="price">550 сом</div>
+        <a class="order-btn" href="https://wa.me/996709455996">Заказать в WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1600628422019-6c9c0f7a28c5" alt="Курица грибы">
+      <div class="card-body">
+        <h3>Курица грибы</h3>
+        <p>Курица, шампиньоны, лук, сливочный соус и сыр</p>
+        <div class="price">600 сом</div>
+        <a class="order-btn" href="https://wa.me/996703455996">Заказать в WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1593504049359-74330189a345" alt="Чикен барбекю">
+      <div class="card-body">
+        <h3>Чикен Барбекю</h3>
+        <p>Курица в соусе барбекю, красный лук, шампиньоны и моцарелла</p>
+        <div class="price">650 сом</div>
+        <a class="order-btn" href="https://wa.me/996709058012">Заказать в WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1548365328-8b849e6b8d4d" alt="Деревенская">
+      <div class="card-body">
+        <h3>Деревенская</h3>
+        <p>Охотничья колбаска, копченый бекон, грибы, огурчики, лук и сыр</p>
+        <div class="price">650 сом</div>
+        <a class="order-btn" href="https://wa.me/996709455996">Заказать в WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1594007654729-407eedc4be43" alt="4 сыра">
+      <div class="card-body">
+        <h3>4 сыра</h3>
+        <p>Моцарелла, дорблю, чеддер и пармезан</p>
+        <div class="price">650 сом</div>
+        <a class="order-btn" href="https://wa.me/996703455996">Заказать в WhatsApp</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="promo">🔥 По акции: 3 любых пиццы за 1500 сом 🔥</div>
+</div>
+
+<footer>
+  <div class="phones">
+    <a href="tel:+996709455996">+996 709 455 996</a>
+    <a href="tel:+996703455996">+996 703 455 996</a>
+    <a href="tel:+996709058012">+996 709 058 012</a>
+  </div>
+  <div class="delivery">🚚 Доставка по городу бесплатно!</div>
+</footer>
+
+</body>
+</html>
